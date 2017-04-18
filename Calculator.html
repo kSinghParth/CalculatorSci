@@ -11,35 +11,35 @@
 <h1 class="heading"><center>CALCULATOR</center></h1><br>
 <table style="margin:1em auto;">
 	<tr>
-		<td><input class="valuecol" style="width:420px; height:60px;"  placeholder="Enter Number" name ="Numbers" size=16 required> </td>
-		<td><input class="btn btn-block  btn-primary" style="height:60px;" type="button" class=" btn   btn-primary" value="AC" ></td>
+		<td><input id="value" class="valuecol" type="text" style="width:420px; height:60px;"  name="Number" placeholder="Enter Number" size=16 required> </td>
+		<td><input class="btn btn-block  btn-primary" style="height:60px;" type="button" class=" btn   btn-primary" value="AC" onclick="document.getElementById('value').value=''"></td>
 	</tr>
 </table>
 <table style="margin:1em auto;">
 	<tr>
-		<td><input class="btn  btn-info" style="height:60px;"  name="button" value="9"  ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="8" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="7" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="+" ></input> </td>
+		<td><input class="btn  btn-info" style="height:60px;"  name="button" value="9"  onclick="myfunct(9)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="8"   onclick="myfunct(8)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="7"   onclick="myfunct(7)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="+"   onclick="myfunct('+')"></input> </td>
 
 	<tr>
 	<tr>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="6" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="5" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="4" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="-" ></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="6"   onclick="myfunct(6)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="5"   onclick="myfunct(5)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="4"   onclick="myfunct(4)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="-"   onclick="myfunct('-')"></input> </td>
 	<tr>
 	<tr>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="3" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="2" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="1" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="*" ></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="3"   onclick="myfunct(3)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="2"   onclick="myfunct(2)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="1"   onclick="myfunct(1)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="*"   onclick="myfunct('*')"></input> </td>
 	<tr>
 	<tr>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="." ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="0" ></input> </td>
-		<td><input class="btn   btn-danger" style="height:60px;"  name="button" value="=" ></input> </td>
-		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="/" ></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="."   onclick="myfunct('.')"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="0"   onclick="myfunct(0)"></input> </td>
+		<td><input class="btn   btn-danger" style="height:60px;"  name="button" value="=" onclick="document.getElementById('value').value=eval(document.getElementById('value').value)"></input> </td>
+		<td><input class="btn   btn-info" style="height:60px;"  name="button" value="/"   onclick="myfunct('/')"></input> </td>
 	<tr>
 
 </table>
